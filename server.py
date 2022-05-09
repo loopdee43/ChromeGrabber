@@ -9,6 +9,6 @@ conn, addr = s.accept()
 print(f"{addr} has connected!")
 path = input("input the path where everything will be saved: ")
 while True:
-    data = conn.recv(1024).decode("utf-8")
+    data = conn.recv(1024)
     thingy = open(join(path, file), 'w')
 
